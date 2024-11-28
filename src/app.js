@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware para habilitar CORS en todas las rutas
 const corsOptions = {
-  origin: ["https://frontend22-fggywzmxd-leandromq2018s-projects.vercel.app"], // Solo el origen de Vercel
+  origin: ["https://frontend22-4x6ccrntb-leandromq2018s-projects.vercel.app"], // Solo el origen de Vercel
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
