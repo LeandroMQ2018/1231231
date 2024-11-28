@@ -12,13 +12,12 @@ const app = express();
 
 // Middleware para habilitar CORS en todas las rutas
 const corsOptions = {
-  origin: ["https://frontend22-fggywzmxd-leandromq2018s-projects.vercel.app", "http://localhost:3000"], // Orígenes permitidos
+  origin: ["https://frontend22-fggywzmxd-leandromq2018s-projects.vercel.app"], // Solo el origen de Vercel
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
-
 
 // Middleware para registrar las solicitudes HTTP en la consola
 app.use(morgan("dev"));
